@@ -2,9 +2,11 @@
 
 We are using "ProsusAI/finbert" model.
 
-first we scrape the data
+first we scrape the data from the moneycontrol website
 
 setup a private environment on ur local
+
+and then run the notebook
 
 ```bash
 which python3
@@ -18,14 +20,6 @@ which python3
 source myenv/bin/activate
 ```
 
-```bash
-pip install transformers
-```
+we are using pandas, beautifulsoup4, transformers and pytorch(required for finbert) libraries.
 
-```bash
-pip install torch
-```
-
-```bash
-python model.py
-```
+initially we will scrape the data, then we download the model from huggingface using transformers library, then we run the model for which pytorch is needed
